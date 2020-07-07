@@ -33,7 +33,14 @@ class _BallState extends State<Ball> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[Image.asset('images/ball1.png')],
+        children: <Widget>[
+          FlatButton(
+            onPressed: () {
+              print('I am Pressed');
+            },
+            child: Image.asset('images/ball1.png'),
+          ),
+        ],
       ),
     );
   }
